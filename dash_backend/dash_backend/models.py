@@ -1,0 +1,20 @@
+from django.db import models
+
+class Report(models.Model):
+    end_year = models.CharField(max_length=10,blank=True)
+    intensity = models.CharField(max_length=10,blank=True)
+    sector = models.CharField(max_length=255,blank=True)
+    topic = models.CharField(max_length=255,blank=True)
+    insight = models.CharField(max_length=255,blank=True)
+    url = models.CharField(max_length=255,blank=True)
+    region = models.CharField(max_length=255,blank=True)
+    start_year = models.CharField(max_length=255,blank=True)
+    impact = models.CharField(max_length=255,blank=True)
+    added = models.CharField(max_length=100,blank=True)
+    published = models.CharField(max_length=100,blank=True)
+    country = models.CharField(max_length=255,blank=True)
+    relevance = models.CharField(max_length=10,blank=True)
+    pestle = models.CharField(max_length=255,blank=True)
+    source = models.CharField(max_length=255,blank=True)
+    title = models.CharField(max_length=255,primary_key=True,blank=True)
+    likelihood = models.CharField(max_length=10,blank=True)
